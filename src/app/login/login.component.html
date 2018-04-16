@@ -1,0 +1,29 @@
+<div  class="login-form">
+  <form nz-form action="">
+    <div nz-form-item>
+      <div nz-form-control>
+        <nz-input formControlName="userName" [nzPlaceHolder]="'用户名'">
+          <ng-template>
+            <i class="anticon anticon-user"></i>
+          </ng-template>
+        </nz-input>
+        <div nz-form-explain></div>
+      </div>
+    </div>
+    <div nz-form-item>
+      <div nz-form-control>
+        <nz-input formControlName="password" [nzPlaceHolder]="'密码'">
+          <ng-template>
+            <i class="anticon anticon-user"></i>
+          </ng-template>
+        </nz-input>
+        <div nz-form-explain></div>
+      </div>
+    </div>
+    <div nz-form-item>
+      <div nz-form-control>
+        <button nz-button [nzType]="'primary'" (click)="onLogin()">登录</button>
+      </div>
+    </div>
+  </form>
+</div>
